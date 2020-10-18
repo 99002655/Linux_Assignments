@@ -1,0 +1,27 @@
+Create audio folder with 2 two subfolders: train and test. 
+Now we have to create some text files that will allow Kaldi to communicate with our audio data.
+
+ACOUSTIC DATA:-
+
+a.) spk2gender
+This file informs about speakers gender. We assume that 'speakerID' is a unique name of each speaker.
+b.) wav.scp
+This file connects every utterance with an audio file related to this utterance.
+c.) text
+This file contains every utterance matched with its text transcription.
+d.) utt2spk
+This file maps each utterance to corresponding speaker.
+e.) spk2utt
+This file tells the ASR system which utterance belongs to particular speaker.
+
+
+LANGUAGE DATA:-
+
+a.) lexicon.txt
+This file contains every word from your dictionary with its 'phone transcriptions'.
+b.) nonsilence_phones.txt
+This file lists nonsilence phones that are present in your project.
+c.) silence_phones.txt
+This file lists silence phones.
+d.) optional_silence.txt
+This file lists optional silence phones.
